@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .ops-text-ellipsis {
+        @apply w-full truncate;
+    }
+
+    .ops-rotate-icon {
+        transform: rotateY(180deg);
+        animation: rotateAnimation 10s linear infinite;
+    }
+
+    .ops-message {
+        @apply bg-confetti-500 box-border px-3 py-1 rounded-md flex justify-center flex-col;
+    }
+
+    img {
+        display: inline-block;
+    }
+
+    /* hr style overwritten to fix outer bootstrap styles */
+    hr {
+        margin: 1rem 0;
+    }
+}

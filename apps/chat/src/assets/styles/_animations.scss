@@ -1,0 +1,45 @@
+// Menu animation
+.ops-slide-left-enter-active,
+.ops-slide-right-enter-active {
+  transition: all 0.3s ease;
+  transition-property: transform, opacity;
+}
+
+.ops-slide-left-leave-active,
+.ops-slide-right-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1) !important;
+  transition-property: transform, opacity;
+}
+
+.ops-slide-left-enter-from,
+.ops-slide-left-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+/* sort animation */
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.list-leave-active {
+  position: absolute;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./components": "./src/components/index.ts",
+    "./composables": "./src/composables/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{vue,ts}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuelidate/core": "^2.0.2",
+    "tsconfig": "*",
+    "vue": "^3.3.2"
+  },
+  "dependencies": {
+    "@vuepic/vue-datepicker": "^5.2.1",
+    "floating-vue": "^2.0.0-beta.24",
+    "vue-flatpickr-component": "9.0.1",
+    "vue-select": "^4.0.0-beta.6"
+  }
+}
